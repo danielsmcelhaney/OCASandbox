@@ -15,9 +15,12 @@ public class Entry {
 	}
 	
 	private static int PreAndPostfix() {
-		int a;
+		int a, result;
 		a = 10;
-		return a++ + a - a-- + a;
+		result = a++ + a;
+		result = result - a--;
+		result = result + a;
+		return result;
 	}
 
 }
